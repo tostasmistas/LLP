@@ -2641,7 +2641,8 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #ff6666;
+			/* background-color: #E6E6E6; */
+			background-image: url("../../images/escheresque.png"); 
 			color: #c7ebe8;
 		}
 
