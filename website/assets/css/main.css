@@ -2642,7 +2642,7 @@
 
 		.wrapper.style1 {
 			/* background-color: #E6E6E6; */
-			background-image: url("../../images/escheresque.png"); 
+			background-image: url("../../images/escheresque.png");
 			color: #c7ebe8;
 		}
 
@@ -3311,6 +3311,7 @@
 					display: inline-block;
 					padding: 0;
 				}
+
 
 					#header nav > ul > li > a {
 						border: 0;
