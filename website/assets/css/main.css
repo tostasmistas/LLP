@@ -1922,15 +1922,15 @@
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #47a3ff;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: #ffad33;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: #70c670;
 		}
 
 /* Image */
@@ -2641,9 +2641,7 @@
 		}
 
 		.wrapper.style1 {
-			/* background-color: #E6E6E6; */
-			background-image: url("../../images/escheresque.png");
-			color: #c7ebe8;
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/../../images/beachpet.jpg);
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2655,27 +2653,27 @@
 			}
 
 			.wrapper.style1 hr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(0, 0, 0, 0);
 			}
 
 			.wrapper.style1 blockquote {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(0, 0, 0, 0);
 			}
 
 			.wrapper.style1 code {
-				background: rgba(255, 255, 255, 0.075);
+				background: rgba(0, 0, 0, 0);
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: #ffffff;
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c7ebe8;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 label {
@@ -2731,7 +2729,7 @@
 			}
 
 			.wrapper.style1 .icon.major {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: #ffffff;
 			}
 
 			.wrapper.style1 ul.alt li {
