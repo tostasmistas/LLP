@@ -2428,11 +2428,12 @@
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #FF6161;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
 				font-size: 1.5em;
+				text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 			}
 
 			.features li:nth-child(1) {
@@ -2794,12 +2795,16 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			/*background-color: #EDEDED;*/
+		  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
+		  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* FF3.6+ */
+		  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* IE10 */
+		  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Opera 11.10+ */
+		  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
-			color: #d3d4e4;
+			background-color: #93C776;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
