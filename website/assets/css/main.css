@@ -2795,16 +2795,16 @@
 			}
 
 		.wrapper.style2 {
-			/*background-color: #EDEDED;*/
-		  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
-		  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* FF3.6+ */
-		  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* IE10 */
-		  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Opera 11.10+ */
-		  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
+			background-color: #FFF5EE;
+	/*	  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
+	/*	  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* FF3.6+ */
+	/*	  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* IE10 */
+	/*	  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Opera 11.10+ */
+	/*	  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
 		}
 
 		.wrapper.style3 {
-			background-color: #93C776;
+			background-color: #9ACD32;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
