@@ -2952,7 +2952,7 @@
 			}
 
 		.wrapper.style4 {
-			background-color: transparent;
+			background-image: url(/../../images/beachpet.jpg);
 		}
 
 		.wrapper.style5 {
@@ -3314,7 +3314,7 @@
 					#header nav > ul > li > a {
 						border: 0;
 						color: #fff;
-						display: block;
+						/*display: block;*/
 						font-size: 0.8em;
 						letter-spacing: 0.225em;
 						padding: 0 1.5em;
@@ -3572,7 +3572,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		max-width: 45em;
+		max-width: 35em;
 	}
 
 		#cta .inner header {
@@ -3887,4 +3887,12 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+	}
+
+	#backgroundForm {
+		background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../../images/beachpet.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	}
