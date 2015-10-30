@@ -2804,7 +2804,7 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #9ACD32;
+			background-color: #73BF0D;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3875,3 +3875,22 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+	#imageMVP {
+		min-width: 10vw;
+		max-width:50vw;
+		height: auto;
+		vertical-align: middle;
+	}
+
+	.noselect {
+		font-size: 0.01pt;
+		color:#ffffff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
