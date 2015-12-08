@@ -35,7 +35,7 @@ header("location: profile.php");
               <a href="#menu" class="menuToggle"><span>Menu</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">Início</a></li>
                     <!--<li><a href="generic.html">Generic</a></li>
                   <li><a href="elements.html">Elements</a></li>
                   <li><a href="#">Sign Up</a></li>-->
@@ -54,7 +54,7 @@ header("location: profile.php");
       <div id="main">
         <div id="login">
         <form action="" method="post">
-          <input style="margin:auto; width:50%" name="username" placeholder="Clinic Name" type="text">
+          <input style="margin:auto; width:50%" name="username" placeholder="Nome da Clínica" type="text">
           <br>
           <input style="margin:auto; width:50%" name="password" placeholder="Password" type="password">
           <br>

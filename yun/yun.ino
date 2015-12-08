@@ -1,5 +1,6 @@
 // Libraries
 #include <Process.h>
+#include <Servo.h>
 
 // Constants
 const char *PARSE_API = "api.parse.com";
@@ -8,13 +9,13 @@ const char *PARSE_CLASS = "calorieLog";
 const char *PARSE_KEY = "1uEpZbxJWB7SNhCykj3U3lPXvzcCYnGJWwneSE7D";
 const char *PARSE_VERSION = "1";
 
-// Counter
+// Variables
 int counter = 0;
+int pos = 0;    // variable to store the servo position
 
-// Leverage Yun Linux (curl)
 Process process;
+Servo servo; 
 
-// Buffer for parameters
 char buffer[80];
 
 // Setup
@@ -22,25 +23,40 @@ void setup(){
   // Bridge communication
   Bridge.begin();
   Console.begin();  
-  while( !Console ) {;}
+  while( !Console ) {;} 
 }
 
 // Loop
 void loop(){
-  // Increment counter
-  counter = counter + 1;
-  
-  // Put value in data store
-  request( counter );
-  wait();
-  response();
 
-  // Wait for next sample
-  delay( 5000 );
+  request();
+  wait();
+  int gramas = response(); 
+  Console.print("gramas: ");
+  Console.println(gramas); 
+  
+  servo.attach(9);  // attach the servo on pin 9 to the servo object
+  servo.write(80);   
+  delay(2000);
+  servo.detach();
+  delay(2000);
+    
+ /* for (pos = 0; pos <= 90; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    servo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+*/
+  //servo.detach();
+  
+  /*for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    servo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }*/
 }
 
 // Send the data to Parse.com
-void request( int value ){
+void request(){
   // Curl request per Parse.com documentation
   /*
   curl -X POST \
@@ -98,7 +114,7 @@ void request( int value ){
 }
 
 // Response from Parse.com
-void response(){
+int response(){
   bool print = true;
   char c;
   String data;
@@ -129,10 +145,8 @@ void response(){
   int last_index = data.indexOf('o');
   String s_gramas = data.substring(first_index+8, last_index-2);
   int gramas = s_gramas.toInt();
-  Console.print("gramas: ");
-  Console.println(gramas);
 
-  
+  return gramas;
 }
 
 // Wait for a response from Parse.com
