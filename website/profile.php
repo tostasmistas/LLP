@@ -20,7 +20,7 @@ include('session.php');
 
 <br>
 
-<b id="logout"><a href="logout.php">Log Out</a></b>
+<b id="logout"><a href="logout.php">Logout</a></b>
 </div>
 </body>
 </html>
