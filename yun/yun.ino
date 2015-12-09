@@ -34,6 +34,12 @@ void loop(){
   Console.print(counter);
 
   if(counter == 1) {
+    // rotate servo
+    servo.attach(9);  // attach the servo on pin 9 to the servo object
+    servo.write(80);   
+    delay(2000);
+    servo.detach();
+    
     // query object
     request_object();
     wait(); 
@@ -41,13 +47,6 @@ void loop(){
     Console.print("\t"); 
     Console.print("gramas: ");
     Console.print(gramas);
-
-    // rotate servo
-    servo.attach(9);  // attach the servo on pin 9 to the servo object
-    servo.write(80);   
-    delay(2000);
-    servo.detach();
-    delay(2000);
 
     Console.print("\t");
     Console.print("servo!");
@@ -59,7 +58,6 @@ void loop(){
     Console.println(objid);
     delete_object(objid);
     
-    counter = 0;
     data_object = "";
   }
 
@@ -278,7 +276,7 @@ String response_objid(){
 void wait(){
   // Periodically check curl process
   while( !process.available() ){
-    delay(100);
+    //delay(100);
   }
 }
 
