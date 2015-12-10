@@ -6,7 +6,7 @@ include('session.php');
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LLP Clinic Dashboard</title>
+  <title>IMV Clinic Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -38,9 +38,9 @@ include('session.php');
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>LLP</b></span>
+      <span class="logo-mini"><b>IMV</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>LLP </b>Dashboard</span>
+      <span class="logo-lg"><b>HOME</b> IMV</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -97,7 +97,7 @@ include('session.php');
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Dr. Nuno Gaspar</span>
+              <span class="hidden-xs">Nuno Gaspar</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -105,7 +105,7 @@ include('session.php');
                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Dr. Nuno Gaspar
+                  Nuno Gaspar
                   <small>Member since Dec. 2015</small>
                 </p>
               </li>
@@ -198,7 +198,6 @@ include('session.php');
         <li>
           <a href="pages/mailbox/mailbox.html">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
-            <small class="label pull-right bg-yellow">12</small>
           </a>
         </li>
       </ul>
@@ -215,7 +214,7 @@ include('session.php');
         <small>Veterinarian</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="profile.php"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
@@ -262,7 +261,7 @@ include('session.php');
 
             <div class="info-box-content">
               <span class="info-box-text">Clients</span>
-              <span class="info-box-number">20</span>
+              <span class="info-box-number">1</span>
             </div>
             <!-- /.info-box-content -->
           </div>
